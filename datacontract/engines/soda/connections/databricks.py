@@ -10,7 +10,6 @@ def to_databricks_soda_configuration(server):
             "method": "databricks",
             "host": server.host,
             "catalog": server.catalog,
-            "schema": server.schema_,
             "http_path": os.getenv('DATACONTRACT_DATABRICKS_HTTP_PATH'),
             "token": os.getenv('DATACONTRACT_DATABRICKS_TOKEN'),
         }
